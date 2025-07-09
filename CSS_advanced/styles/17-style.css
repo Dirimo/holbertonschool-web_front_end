@@ -24,7 +24,14 @@
     --section-tagline-transform: uppercase;
     --section-title-margin: 0;
     --section-title-color: var(--color-black);
+    --section-padding: 5rem 0;
+    --section-header-padding: 0 0 3rem;
+    --section-body-padding: 0 0 3rem;
+    --section-footer-padding:3rem 0 0;
+    --section-footer-align: center;
+    --footer-padding: 5rem 0 1rem;
 }
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -47,21 +54,21 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: var(--font-weight-bold);
 }
 
-a[href] {
+a:link {
     color: var(--text-color);
     text-decoration: none;
 }
 
-a[href]:visited {
-    font-style: italic; /*Italicize the text of visited links*/
+a:visited {
+    font-style: italic; 
 }
 
-a[href]:hover {
-    text-decoration: underline; /*Underline the text when hovering*/
+a:hover {
+    text-decoration: underline;
 }
 
-a[href]:active {
-    background-color: var(--color-light-grey); /*Set background color for active links*/
+a:active {
+    background-color: var(--color-light-grey);
 }
 
 .visually-hidden {
@@ -87,6 +94,25 @@ a[href]:active {
     font-weight: var(--font-weight-bold);
 }
 
+.section {
+    padding: var(--section-padding);
+}
+
+
 .section-header {
     text-align: var(--section-header-align);
+    padding: var(--section-header-padding);
+}
+
+.section-body   {
+    padding: var(--section-body-padding);
+}
+
+.section-footer {
+    padding: var(--section-footer-padding);
+    text-align: var(--section-footer-align);
+}
+
+.footer {
+    padding: var(--footer-padding);
 }
