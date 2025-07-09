@@ -41,9 +41,21 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: var(--font-weight-bold);
 }
 
-a {
+a:link {
     color: var(--text-color);
     text-decoration: none;
+}
+
+a:visited {
+    font-style: italic;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    background-color: var(--color-light-grey);
 }
 
 .visually-hidden {
@@ -61,6 +73,7 @@ a {
     margin: var(--section-title-margin);
     color: var(--section-title-color);
 }
+
 .section-tagline {
     color: var(--color-primary);
     font-family: var(--font-family-title);
